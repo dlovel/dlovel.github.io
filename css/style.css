@@ -15,6 +15,7 @@ body{
   .main{width:100%;}
   .main_box{width:86%;}
   html,body{font-size:28px;}
+  .side_bar{right:0 !important;}
 }
 
 
