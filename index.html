@@ -25,12 +25,25 @@
 			$(".print").click(function(){
 				$(".main_box").printArea();
 			});
-			var x_soft = $(".main").offset().left + $(".main").outerWidth(false) + 20
-			$(".side_bar").css("left",x_soft+"px")
+			if($(window).width() > 750){
+				var x_soft = $(".main").offset().left + $(".main").outerWidth(false) + 20
+				$(".side_bar").css("left",x_soft+"px")
+			}else{
+				var x_softs = $(".main_box").offset().left + $(".main_box").outerWidth(false) + 4
+				alert($(".main_box").offset().left)
+				$(".side_bar").css("left",x_softs+"px")
+			}
+			
 		})
 		$(window).resize(function(){
-			var x_soft = $(".main").offset().left + $(".main").outerWidth(false) + 20
-			$(".side_bar").css("left",x_soft+"px")
+			if($(window).width() > 750){
+				var x_soft = $(".main").offset().left + $(".main").outerWidth(false) + 20
+				$(".side_bar").css("left",x_soft+"px")
+			}else{
+				var x_softs = $(".main_box").offset().left + $(".main_box").outerWidth(false) + 4
+				alert($(".main_box").offset().left)
+				$(".side_bar").css("left",x_softs+"px")
+			}
 		})
 	</script>
 </head>
