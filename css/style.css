@@ -97,6 +97,14 @@ div{outline:none;}
 	.table_project_con{float:left;width:473px;border-left:1px solid #669999;padding:15px 5px;}
 	.table_project_con p{font-size:12px;line-height:25px;}
 	.table_project_con p em{vertical-align:initial;font-weight:bold;}
+	.side_bar{position:fixed;top:50px;right:-80px;width:42px;height:auto;display:none;}
+	.side_bar ul{}
+	.side_bar ul li{height:42px;width:42px;overflow: hidden;border: 1px solid #669999;background:#FFF;margin-bottom:10px;}
+	.side_bar ul li a{display:block;height:40px;line-height:40px;font-size:14px;color:#000;cursor:pointer;text-align:center;}
+	.side_bar ul li a.download{background: url(../images/download.png) no-repeat center center/auto auto;}
+	.side_bar ul li a.download:hover{background:none;font-size:14px;color:#000;}
+	.side_bar ul li a.print{background: url(../images/print.png) no-repeat center center/auto auto;}
+	.side_bar ul li a.print:hover{background:none;font-size:14px;color:#000;}
 
 }
 
