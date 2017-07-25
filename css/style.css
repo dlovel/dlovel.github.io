@@ -10,14 +10,11 @@ body{
     user-select:none;*/
 }
 
-@media all and ( max-width: 828px ) {
-  html{font-size:14px;}
-}
 
 @media all and ( max-width: 750px ) {
   .main{width:100%;}
   .main_box{width:86%;}
-  html,body{font-size:14px;}
+  html,body{font-size:28px;}
 }
 
 
