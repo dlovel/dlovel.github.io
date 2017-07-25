@@ -9,6 +9,18 @@ body{
     /*-webkit-user-select:none;
     user-select:none;*/
 }
+
+@media all and ( max-width: 828px ) {
+  html{font-size:14px;}
+}
+
+@media all and ( max-width: 750px ) {
+  .main{width:100%;}
+  .main_box{width:86%;}
+  html,body{font-size:14px;}
+}
+
+
 body,html{width:100%;}
 input{color:#000}
 input:disabled{background:#fff !important;-webkit-text-fill-color:#ccc;opacity:1}
