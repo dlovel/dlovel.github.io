@@ -48,6 +48,7 @@ div{outline:none;}
 .table_project_title span{position:absolute;top:50%;font-weight:bold;margin-top:-17px;}
 .table_project_con{float:left;width:473px;border-left:1px solid #669999;padding:15px 5px;}
 .table_project_con p{font-size:12px;line-height:25px;}
+a.a_classs{color:#000;}
 .table_project_con p em{vertical-align:initial;font-weight:bold;}
 
 .side_bar{position:fixed;top:50px;right:-80px;width:42px;height:auto;}
