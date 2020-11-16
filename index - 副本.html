@@ -12,10 +12,10 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<script>
 		$(function(){
-			// $(".table_project_item").each(function(){
-			// 	var r_height=$(".table_project_con",$(this)).outerHeight(false)
-			// 	$(".table_project_title",$(this)).css("height",r_height)
-			// })
+			$(".table_project_item").each(function(){
+				var r_height=$(".table_project_con",$(this)).outerHeight(false)
+				$(".table_project_title",$(this)).css("height",r_height)
+			})
 			$(".side_bar ul li a").mouseover(function(){
 				$(this).html($(this).attr("data-name"))
 			})
@@ -193,113 +193,10 @@
 										<div class="table_column">
 											<div class="table_column_box">
 												<div class="table_project">
-													<h2 class="table_project_left">深圳脸谱电子商务有限公司</h2>
-													<div class="table_project_right">
+													<div>
 														<div class="table_project_item">
 															<div class="table_project_title">
-																9号视频站项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + cube-ui + vantUi + git</p>
-																<p><em>项目简述:</em>为用户提供丰富、高清、流畅的专业视频体验。</p>
-																<p><em>职责描述:</em>负责整个项目的前端工作，包括h5、PC及管理后台前端的制作及Facebook、line分享注册等功能的制作。PC和h5主要包括视频的推荐、分类、筛选、看视频、广告、会员中心、收藏、多语言等功能，管理后台主要包括视频的发布、编辑、删除等流程、分类管理，广告系统，会员系统、管理后台权限管理等主功能</p>
-																<p><em>项目网址：</em></p>
-																<p>9号视频站项目： <a class="a_classs" href="https://fiilmovie.com/" target="_blank">https://fiilmovie.com/</a> (项目是针对国外投放，访问可能会很慢)</p>
-															</div>
-														</div>
-
-														<div class="table_project_item">
-															<div class="table_project_title">
-																青阅阅读小说项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + cube-ui + git</p>
-																<p><em>项目简述:</em>青阅就是书虫居家旅行大必备良品！拥有千万本的海量图书阅读资源。在线阅读、秒速追更随时随地口袋阅读尽情享受阅读乐趣！书籍评论，评分，各种功能应有尽有，与世界各地的书友门尽情交流。</p>
-																<p><em>职责描述:</em>负责整个项目的h5页面制作及管理后台前端的制作及微信公众号分享注册等功能的制作。h5主要包括小说的推荐、分类、筛选，书架、阅读、评论、评分、阅读奖励、广告、会员中心、收藏等功能，管理后台主要包括小说的发布、编辑、删除等流程、分类管理，广告系统、金币系统，会员系统、管理后台权限管理等功能，微信分享、推荐、奖励的流程等主功能</p>
-																<p><em>项目网址：</em></p>
-																<p>青阅阅读小说项目： <a class="a_classs" href="http://47.112.36.44/wyxs-h5/#/" target="_blank">http://47.112.36.44/wyxs-h5/#/</a></p>
-															</div>
-														</div>
-
-														<div class="table_project_item">
-															<div class="table_project_title">
-																彩票项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + elementUi + git </p>
-																<p><em>项目简述:</em>彩票数据的统计及展示</p>
-																<p><em>职责描述:</em>负责整个项目的前端及管理后台的前端等功能的制作。主要包括各个彩种的数据统计展示，玩法说明，数据筛选等主要功能</p>
-															</div>
-														</div>
-
-														<div class="table_project_item" >
-															<div class="table_project_title">
-																金艺藏金项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + elementUi + git</p>
-																<p><em>项目简述:</em>致力于做贵金属加工销售的在线电子商务创新平台。主要包括商品的购买、支付、售后流程及分享、推荐、奖励的流程及在线验证真伪等功能。</p>
-																<p><em>职责描述:</em>负责整个项目的管理后台的前端部分制作及微信公众号分享注册等功能的制作。主要包括商品上架流程、订单管理，用户管理，分润管理及微信分享、推荐、奖励的流程等主要功能</p>																
-																<p><em>项目网址：</em></p>
-																<p>金艺藏金项目： <a class="a_classs" href="http://47.104.232.111:8000/#/login?redirect=%2F" target="_blank">http://47.104.232.111:8000/#/login?redirect=%2F</a></p>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="table_project">
-													<h2 class="table_project_left">中信网络科技股份有限公司</h2>
-													<div class="table_project_right">
-														<div class="table_project_item">
-															<div class="table_project_title">
-																拼++项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + git </p>
-																<p><em>项目简述:</em>商家入驻模式的第三方移动电商平台，用户发起邀请，在与朋友、家人、邻居等拼单成功后，能以更低的价格买到优质商品及推荐者可以获得推荐奖励。</p>
-																<p><em>职责描述:</em>负责整个项目的前端部分制作。主要包括商品的购买、支付、售后流程，商品的拼团、支付、售后、流程及分享、推荐、奖励的流程等</p>
-															</div>
-														</div>
-
-														<div class="table_project_item">
-															<div class="table_project_title">
-																鲜特汇商户APP
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + git </p>
-																<p><em>项目简述:</em>鲜特汇商户APP是一款高效、便捷的收银工具，是广东农信面向鲜特汇入驻商户推出的商家移动收银管理平台，为商户提供一站式收银、账单、管理、运营解决方案</p>
-																<p><em>职责描述:</em>我在项目中主要负责APP的维护、新增需求及安卓及ios打包送审上线等工作。</p>
-															</div>
-														</div>
-
-														<div class="table_project_item">
-															<div class="table_project_title">
-																收银台及个人中心项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + git </p>
-																<p><em>项目简述:</em>鲜特汇商户APP的附属项目，主要是在用户端的微信或者支付宝中打开付款。</p>
-																<p><em>职责描述:</em>我在项目中主要负责后期维护，新增需求及打包上线。</p>
-															</div>
-														</div>
-
-														<div class="table_project_item" >
-															<div class="table_project_title">
-																支付网关项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + git</p>
-																<p><em>项目简述:</em>致力于为商家提供整套完善的支付服务系统，包括微信支付，银行卡支付，网银支付，手机银行支付。</p>
-																<p><em>职责描述:</em>项目页面的制作及数据的对接，包括调试U Key,密码控件的调试。</p>																
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="table_project">
-													<h2 class="table_project_left">广州零壹聚科技有限公司</h2>
-													<div class="table_project_right">
-														<div class="table_project_item">
-															<div class="table_project_title">
-																唐人街商城
+																<span>唐人街商城</span>
 															</div>
 															<div class="table_project_con">
 																<p><em>项目环境:</em>linux + PHP + MySql + git </p>
@@ -312,7 +209,7 @@
 
 														<div class="table_project_item">
 															<div class="table_project_title">
-																直播项目
+																<span>直播项目</span>
 															</div>
 															<div class="table_project_con">
 																<p><em>项目环境:</em>linux + JAVA+ MySql + git </p>
@@ -321,9 +218,9 @@
 															</div>
 														</div>
 
-														<div class="table_project_item" >
+														<div class="table_project_item" style="border-bottom: 1px solid #669999;">
 															<div class="table_project_title">
-																电影票系统
+																<span>电影票系统</span>
 															</div>
 															<div class="table_project_con">
 																<p><em>项目环境:</em>linux + JAVA + MySql + git </p>
@@ -334,13 +231,10 @@
 															</div>
 														</div>
 													</div>
-												</div>
-												<div class="table_project">
-													<h2 class="table_project_left">深圳市壹点点信息科技有限公司</h2>
-													<div class="table_project_right">
+													<div>
 														<div class="table_project_item">
 															<div class="table_project_title">
-																亿企联大型电商服务平台
+																<span>亿企联大型电商服务平台</span>
 															</div>
 															<div class="table_project_con">
 																<p><em>项目环境:</em>Windows OS + Tomcat + MySql + MyEclipse6.5 + SVN</p>
@@ -353,7 +247,7 @@
 
 														<div class="table_project_item">
 															<div class="table_project_title">
-																亿企联项目手机端
+																<span>亿企联项目手机端</span>
 															</div>
 															<div class="table_project_con">
 																<p><em>项目简述：</em>为满足用户需求，开发手机亿企联项目，方便商家使用。手机亿企联就是把pc端的功能移植到手机端（基于微信公众号）。手机亿企联主要负责：我的卡、我的券、我的店铺、聚优惠、卡超市、手机红包、系统公告、二维码收款、支付渠道、财务对账、商城商品展示、订单、售后、优惠券等。</p>
@@ -381,9 +275,9 @@
 											<div class="table_column_box">
 												<div class="table_skill">
 													<p>1.2010/09 – 2013/06 常州信息职业技术学院  |  计算机科学与技术  |  专科</p>
-													<!-- <p>2.2007/09 – 2010/06 扶沟高中  |  高中</p>
+													<p>2.2007/09 – 2010/06 扶沟高中  |  高中</p>
 													<p>3.2003/09 – 2007/06 白潭二中  |  初中 </p>
-													<p>4.1997/09 -  2003/06 赵庄小学  |  小学</p> -->
+													<p>4.1997/09 -  2003/06 赵庄小学  |  小学</p>
 												</div>
 											</div>
 										</div>
@@ -417,7 +311,6 @@
 												<div class="table_skill">
 													<p>对待工作认真负责、细心严密、积极上进，责任感强。</p>
 													<p>良好的自我解决问题的能力，自主学习、突破自我能力强。</p>
-													<p>有一定的组织领导能力，能完成较强的工作，抗压能力好。</p>
 													<p>有良好的团队合作精神，积极配合团队工作，有较强的沟通、协作能力。</p>
 													<p>性格上活泼开朗，待人友善，乐于沟通，能很快适应新环境。</p>
 												</div>
