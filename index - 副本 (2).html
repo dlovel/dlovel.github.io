@@ -50,15 +50,90 @@
 					<div class="content">
 						<table>
 							<tbody>
-								<tr v-for="(item,index) in basicInfo" :key="index">
-									<template v-for="(em,idx) in item" :key="em + idx">
-										<th>
-											<div class="table_title_th">{{ em.title }}</div>
-										</th>
-										<td>
-											<div class="table_title_td">{{ em.content }}</div>
-										</td>
-									</template>
+								<tr>
+									<th>
+										<div class="table_title_th">姓名</div>
+									</th>
+									<td>
+										<div class="table_title_td">杜春阳</div>
+									</td>
+									<th>
+										<div class="table_title_th">性别</div>
+									</th>
+									<td>
+										<div class="table_title_td">男</div>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<div class="table_title_th">民族</div>
+									</th>
+									<td>
+										<div class="table_title_td">汉族</div>
+									</td>
+									<th>
+										<div class="table_title_th">学历</div>
+									</th>
+									<td>
+										<div class="table_title_td">专科(本科在读)</div>
+									</td>
+								</tr>
+								
+								<tr>
+									<th>
+										<div class="table_title_th">专业</div>
+									</th>
+									<td>
+										<div class="table_title_td">计算机科学网络与技术</div>
+									</td>
+									<th>
+										<div class="table_title_th">工作经验</div>
+									</th>
+									<td>
+										<div class="table_title_td">7年</div>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<div class="table_title_th">毕业学院</div>
+									</th>
+									<td>
+										<div class="table_title_td">常州信息职业技术学院</div>
+									</td>
+									<th>
+										<div class="table_title_th">政治面貌</div>
+									</th>
+									<td>
+										<div class="table_title_td">党员</div>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<div class="table_title_th">求职意向</div>
+									</th>
+									<td>
+										<div class="table_title_td">前端开发</div>
+									</td>
+									<th>
+										<div class="table_title_th">目前状态</div>
+									</th>
+									<td>
+										<div class="table_title_td">目前处于离职状态，可立即上岗</div>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<div class="table_title_th">联系电话</div>
+									</th>
+									<td>
+										<div class="table_title_td">15889626521</div>
+									</td>
+									<th>
+										<div class="table_title_th">邮箱</div>
+									</th>
+									<td>
+										<div class="table_title_td">996468104@qq.com</div>
+									</td>
 								</tr>
 								<!-- 专业技能  start -->
 								<tr>
@@ -69,7 +144,12 @@
 										<div class="table_column">
 											<div class="table_column_box">
 												<div class="table_skill">
-													<p v-for="(item,index) in professionalSkills" :key="index + 'skill'">{{index+1}}.{{ item }}</p>
+													<p>1.熟练运用VSCode、Sublime text、Atom、webstorm、Chrome、firefox、Photoshop、等常用网页开发软件,掌握网站效果图的制作、切片及HTML页面代码优化等技术。</p>
+													<p>2.精通HTML+CSS网页布局与样式，熟悉HTML5与CSS3.0。</p>
+													<p>3.掌握JavaScript、typeScript语言，熟练使用vue框架，掌握 webpack、babel、vite 等构建工具的使用及其原理,熟练使用cube-ui、VantUi、iview、ElementUI,bootstrap等UI框架,掌握less，sass，stylus,了解uni-app跨平台应用的前端框架,了解node、angular等前端框架。能够实现网页的动态效果与页面交互。</p>
+													<p>4.熟悉微信公众号、⼩程序开发，能熟练运⽤各种开发API。</p>
+													<p>5.能够熟练编写标准前端代码，熟悉浏览器兼容问题解决方案，熟悉小程序开发技术,有一定的网页设计能力</p>
+													<p>7.熟练使用git、svn等代码管理工具。了解使Axure RP等工具制作网站原型。</p>
 												</div>
 											</div>
 										</div>
@@ -85,11 +165,7 @@
 										<div class="table_column">
 											<div class="table_column_box">
 												<div class="table_experience">
-													<template v-for="(item,index) in workExperience" :key="index+'ex'">
-														<h3>{{index+1}}. {{ item.title }}</h3>
-													  <p v-for="(em,idx) in item.content">{{em}}</p>
-													</template>
-													<!-- <h3>1.2020/11 – 至今 广东道一信息技术股份有限公司 | 通用产品部 | 高级前端工程师</h3>
+													<h3>1.020/11 – 至今 广东道一信息技术股份有限公司 | 通用产品部 | 高级前端工程师</h3>
 													  <p>软件开发;软件销售;技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广;信息系统集成服务。| 规模：500-1000 人 </p>
 													  <p>担任高级前端工程师，主要参与的产品及项目：CRM销售管理系统、道一云小站、七巧Plus系统、表单流程系统、培训考试系统及SCRM群管理系统等。</p>
 													<h3>2.2018/11 –至今 深圳脸谱电子商务有限公司 | 技术部 | 高级前端工程师</h3>
@@ -106,7 +182,7 @@
 													<h3>6.2014/12 – 2015/03 常州旭军科技有限公司 | 技术部 | 前端开发</h3>
 													  <p>负责网站页面设计、前端开发。</p>
 													<h3>7.2013/11 – 2014/12 江苏网梭软件科技有限公司 | 技术部 | 前端开发 </h3>
-													  <p>主要负责前端页面制作及效果的实现！并且担当公司网管！</p> -->
+													  <p>主要负责前端页面制作及效果的实现！并且担当公司网管！</p>
 												</div>
 											</div>
 										</div>
@@ -373,74 +449,73 @@
 		</main>
 		<footer></footer>
 	</div>
-<script type="">
+	<script type="">
 	var app = new Vue({
       el: "#app",
       data: {
-		basicInfo:[ // 基本信息
-			[{title: '姓名',content: '杜春阳'},{title: '性别',content: '男'}],
-			[{title: '民族',content: '汉族'},{title: '学历',content: '专科(本科在读)'}],
-			[{title: '专业',content: '计算机科学网络与技术'},{title: '工作经验',content: '9年'}],
-			[{title: '毕业学院',content: '常州信息职业技术学院'},{title: '政治面貌',content: '党员'}],
-			[{title: '求职意向',content: '前端开发'},{title: '目前状态',content: '目前处于离职状态，可立即上岗'}],
-			[{title: '联系电话',content: '15889626521'},{title: '邮箱',content: '996468104@qq.com'}]
-		],
-		professionalSkills:[
-			'熟练运用VSCode、Sublime text、Atom、webstorm、Chrome、firefox、Photoshop、等常用网页开发软件,掌握网站效果图的制作、切片及HTML页面代码优化等技术。',
-			'精通HTML+CSS网页布局与样式，熟悉HTML5与CSS3.0。',
-			'掌握JavaScript、typeScript语言，熟练使用vue框架，掌握 webpack、babel、vite 等构建工具的使用及其原理,熟练使用cube-ui、VantUi、iview、ElementUI,bootstrap等UI框架,掌握less，sass，stylus,了解uni-app跨平台应用的前端框架,了解node、angular等前端框架。能够实现网页的动态效果与页面交互。',
-			'熟悉微信公众号、⼩程序开发，能熟练运⽤各种开发API。',
-			'能够熟练编写标准前端代码，熟悉浏览器兼容问题解决方案，熟悉小程序开发技术,有一定的网页设计能力',
-			'熟练使用git、svn等代码管理工具。了解使Axure RP等工具制作网站原型。'
-		],
-		workExperience:[
-			{
-				title:'2020/11 – 至今 广东道一信息技术股份有限公司 | 通用产品部 | 高级前端工程师',
-				content:[
-					'软件开发;软件销售;技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广;信息系统集成服务。| 规模：500-1000 人',
-					'担任高级前端工程师，主要参与的产品及项目：CRM销售管理系统、道一云小站、七巧Plus系统、表单流程系统、培训考试系统及SCRM群管理系统等。'
-				]
-			},
-			{
-				title:'2018/11 –至今 深圳脸谱电子商务有限公司 | 技术部 | 高级前端工程师',
-				content:[
-					'销售电子产品、计算机软硬件；经营电子商务。| 规模：20-50人',
-					'担任前端组组长,负责分配工作任务和向上级汇报工作进度，主要负责项目：9号视频站项目的pc端、h5端、wapApp端及管理后台，青阅阅读小说项目的h5页面及管理后台，金艺藏金项目公众号及管理后台，彩票项目的数据统计及展示等。'
-				]
-			},
-			{
-				title:'2018/4 –2018/11 中信网络科技股份有限公司 | 技术部 | 前端开发',
-				content:[
-					'科技推广/应用服务业，致力于为中国金融机构、政府、大中型企业信息化建设提供可信赖的专业服务和解决方案。| 规模：100-200人',
-					'主要负责项目：鲜特汇商户APP（web app 包括安卓及ios的打包送审上线等工作），收银台项目，个人中心项目，财政厅缴税系统，支付网关项目等。'
-				]
-			},
-			{
-				title:'2017/8 - 2017/12 广州零壹聚科技有限公司 | 设计部 | 前端开发',
-				content:[
-					'互联网/电子商务,计算机软件,IT服务(系统/数据/维护) | 规模：100-200人',
-					'担任前端组组长,负责分配工作任务和向上级汇报工作进度，主要负责项目：商城页面及商城各个活动页的前端开发工作，公司直播项目网页端，游戏项目（斗地主、扯胡子）及电影票系统的的前端工作。'
-				]
-			},
-			{
-				title:'2015/04 – 2017/07 深圳市壹点点信息科技有限公司 | 亿企联项目组 | 前端开发',
-				content:[
-					'参与亿企联项目（pc端和移动端）的前端开发工作'
-				]
-			},
-			{
-				title:'2014/12 – 2015/03 常州旭军科技有限公司 | 技术部 | 前端开发',
-				content:[
-					'负责网站页面设计、前端开发。'
-				]
-			},
-			{
-				title:'2013/11 – 2014/12 江苏网梭软件科技有限公司 | 技术部 | 前端开发 ',
-				content:[
-					'主要负责前端页面制作及效果的实现！并且担当公司网管！'
-				]
-			}
-		],
+		  basicInfo:[
+			  [
+				  {
+					  title: '姓名',
+					  content: '杜春阳'
+				  },
+				  {
+					  title: '性别',
+					  content: '男'
+				  },
+			  ],
+			  [
+				  {
+					  title: '民族',
+					  content: '汉族'
+				  },
+				  {
+					  title: '学历',
+					  content: '专科(本科在读)'
+				  },
+			  ],
+			  [
+				  {
+					  title: '专业',
+					  content: '计算机科学网络与技术'
+				  },
+				  {
+					  title: '工作经验',
+					  content: '9年'
+				  },
+			  ],
+			  [
+				  {
+					  title: '毕业学院',
+					  content: '常州信息职业技术学院'
+				  },
+				  {
+					  title: '政治面貌',
+					  content: '党员'
+				  },
+			  ],
+			  [
+				  {
+					  title: '求职意向',
+					  content: '前端开发'
+				  },
+				  {
+					  title: '目前状态',
+					  content: '目前处于离职状态，可立即上岗'
+				  },
+			  ],
+			  [
+				  {
+					  title: '联系电话',
+					  content: '15889626521'
+				  },
+				  {
+					  title: '邮箱',
+					  content: '996468104@qq.com'
+				  },
+			  ],
+
+		  ]
 	  },
       created () {
 
@@ -453,6 +528,6 @@
 
       },
     });
-</script>
+	</script>
 </body>
 </html>
