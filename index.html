@@ -121,47 +121,22 @@
 									<td colspan="3">
 										<div class="table_column">
 											<div class="table_column_box">
-												<div class="table_project">
-													<h2 class="table_project_left">深圳脸谱电子商务有限公司</h2>
+												<div class="table_project" v-for="(item,index) in projectExperience" :key="index">
+													<h2 class="table_project_left">{{ item.corporateName }}</h2>
 													<div class="table_project_right">
-														<div class="table_project_item">
+														<div class="table_project_item" v-for="(em, indexEm) in item.project">
 															<div class="table_project_title">
-																9号视频站项目
+																{{ em.name }}
 															</div>
 															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + cube-ui + vantUi + git</p>
-																<p><em>项目简述:</em>为用户提供丰富、高清、流畅的专业视频体验。</p>
-																<p><em>职责描述:</em>负责整个项目的前端工作，包括h5、PC及管理后台前端的制作及Facebook、line分享注册等功能的制作。PC和h5主要包括视频的推荐、分类、筛选、看视频、广告、会员中心、收藏、多语言等功能，管理后台主要包括视频的发布、编辑、删除等流程、分类管理，广告系统，会员系统、管理后台权限管理等主功能</p>
-																<p><em>项目网址：</em></p>
-																<p>9号视频站项目： <a class="a_classs" href="https://fiilmovie.com/" target="_blank">https://fiilmovie.com/</a> (项目是针对国外投放，访问可能会很慢)</p>
+																<template v-for="info in em.info">
+																	<p v-if="info.content"><em>{{ info.title }}:</em>{{ info.content }}</p>
+																</template>
+																
 															</div>
 														</div>
 
-														<div class="table_project_item">
-															<div class="table_project_title">
-																青阅阅读小说项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + cube-ui + git</p>
-																<p><em>项目简述:</em>青阅就是书虫居家旅行大必备良品！拥有千万本的海量图书阅读资源。在线阅读、秒速追更随时随地口袋阅读尽情享受阅读乐趣！书籍评论，评分，各种功能应有尽有，与世界各地的书友门尽情交流。</p>
-																<p><em>职责描述:</em>负责整个项目的h5页面制作及管理后台前端的制作及微信公众号分享注册等功能的制作。h5主要包括小说的推荐、分类、筛选，书架、阅读、评论、评分、阅读奖励、广告、会员中心、收藏等功能，管理后台主要包括小说的发布、编辑、删除等流程、分类管理，广告系统、金币系统，会员系统、管理后台权限管理等功能，微信分享、推荐、奖励的流程等主功能</p>
-																<p><em>项目网址：</em></p>
-																<p>青阅阅读小说项目： <a class="a_classs" href="http://47.112.36.44/wyxs-h5/#/" target="_blank">http://47.112.36.44/wyxs-h5/#/</a></p>
-															</div>
-														</div>
-
-														<div class="table_project_item">
-															<div class="table_project_title">
-																彩票项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + elementUi + git </p>
-																<p><em>项目简述:</em>彩票数据的统计及展示</p>
-																<p><em>职责描述:</em>负责整个项目的前端及管理后台的前端等功能的制作。主要包括各个彩种的数据统计展示，玩法说明，数据筛选等主要功能</p>
-															</div>
-														</div>
-
-														<div class="table_project_item" >
+														<!-- <div class="table_project_item" >
 															<div class="table_project_title">
 																金艺藏金项目
 															</div>
@@ -172,128 +147,8 @@
 																<p><em>项目网址：</em></p>
 																<p>金艺藏金项目： <a class="a_classs" href="http://47.104.232.111:8000/#/login?redirect=%2F" target="_blank">http://47.104.232.111:8000/#/login?redirect=%2F</a></p>
 															</div>
-														</div>
+														</div> -->
 													</div>
-												</div>
-												<div class="table_project">
-													<h2 class="table_project_left">中信网络科技股份有限公司</h2>
-													<div class="table_project_right">
-														<div class="table_project_item">
-															<div class="table_project_title">
-																拼++项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + git </p>
-																<p><em>项目简述:</em>商家入驻模式的第三方移动电商平台，用户发起邀请，在与朋友、家人、邻居等拼单成功后，能以更低的价格买到优质商品及推荐者可以获得推荐奖励。</p>
-																<p><em>职责描述:</em>负责整个项目的前端部分制作。主要包括商品的购买、支付、售后流程，商品的拼团、支付、售后、流程及分享、推荐、奖励的流程等</p>
-															</div>
-														</div>
-
-														<div class="table_project_item">
-															<div class="table_project_title">
-																鲜特汇商户APP
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + git </p>
-																<p><em>项目简述:</em>鲜特汇商户APP是一款高效、便捷的收银工具，是广东农信面向鲜特汇入驻商户推出的商家移动收银管理平台，为商户提供一站式收银、账单、管理、运营解决方案</p>
-																<p><em>职责描述:</em>我在项目中主要负责APP的维护、新增需求及安卓及ios打包送审上线等工作。</p>
-															</div>
-														</div>
-
-														<div class="table_project_item">
-															<div class="table_project_title">
-																收银台及个人中心项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + git </p>
-																<p><em>项目简述:</em>鲜特汇商户APP的附属项目，主要是在用户端的微信或者支付宝中打开付款。</p>
-																<p><em>职责描述:</em>我在项目中主要负责后期维护，新增需求及打包上线。</p>
-															</div>
-														</div>
-
-														<div class="table_project_item" >
-															<div class="table_project_title">
-																支付网关项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Vue + git</p>
-																<p><em>项目简述:</em>致力于为商家提供整套完善的支付服务系统，包括微信支付，银行卡支付，网银支付，手机银行支付。</p>
-																<p><em>职责描述:</em>项目页面的制作及数据的对接，包括调试U Key,密码控件的调试。</p>																
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="table_project">
-													<h2 class="table_project_left">广州零壹聚科技有限公司</h2>
-													<div class="table_project_right">
-														<div class="table_project_item">
-															<div class="table_project_title">
-																唐人街商城
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>linux + PHP + MySql + git </p>
-																<p><em>项目简述:</em>致力于为商家提供整套完善的服务系统，包括实体店入驻、用户中心、卖家中心等栏目、用户手机端app及wap端商城、运营后台管理系统。</p>
-																<p><em>职责描述:</em>我在项目中主要负责商城各个页面的维护、各种活动页的前端页面的制作及数据对接上线。</p>
-																<p><em>项目网址：</em></p>
-																<p>唐人街商城网址： http://www.trj.cc/</p>
-															</div>
-														</div>
-
-														<div class="table_project_item">
-															<div class="table_project_title">
-																直播项目
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>linux + JAVA+ MySql + git </p>
-																<p><em>项目简述:</em>致力于为商家提供整套完善的商业化的直播平台，来达到推广自己商品的目的。</p>
-																<p><em>职责描述:</em>我在项目中主要负责PC及移动端的网页版直播。包括直播视频的展示，用户信息展示，及礼物的展示。</p>
-															</div>
-														</div>
-
-														<div class="table_project_item" >
-															<div class="table_project_title">
-																电影票系统
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>linux + JAVA + MySql + git </p>
-																<p><em>项目简述:</em>致力于为商家提供整套完善的电影票在线选座系统，包括城市选择，影院选择，影院详情，电影票详情，座位选座，优惠券，订单等功能。</p>
-																<p><em>职责描述:</em>根据产品需求,分析并给出最优的页面前端结构解决方案,与UI合作完成电影票系统页面前端的特效及与后台人员进行数据对接等。</p>
-																<p><em>项目网址：</em></p>
-																<p>电影票系统网址： <a class="a_classs" href="http://blog.dlovel.com/project/lyj/2017-12-2%E7%94%B5%E5%BD%B1%E7%A5%A8%E8%B4%AD%E4%B9%B0/%E9%A6%96%E9%A1%B5.html" target="_blank">http://blog.dlovel.com/project/lyj/2017-12-2%E7%94%B5%E5%BD%B1%E7%A5%A8%E8%B4%AD%E4%B9%B0/%E9%A6%96%E9%A1%B5.html</a></p>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="table_project">
-													<h2 class="table_project_left">深圳市壹点点信息科技有限公司</h2>
-													<div class="table_project_right">
-														<div class="table_project_item">
-															<div class="table_project_title">
-																亿企联大型电商服务平台
-															</div>
-															<div class="table_project_con">
-																<p><em>项目环境:</em>Windows OS + Tomcat + MySql + JQuery + SVN</p>
-																<p><em>项目简述:</em>亿企联项目旨在为实体店商家提供营销手段和服务项目。共有4套系统，主要是：pc亿企联、营运系统、信息发布系统、渠道系统。pc亿企联主要有我的服务、我的账户、系统管理、市场选货、企业朋友圈、首页6大功能。pc亿联的核心为服务和账户体系，我的服务下面主要有11个服务项目，我主要负责的服务项目有：二维码收款、企业红包、个人红包、优惠券、智能wifi、支付渠道、会员商城、订单管理、会员管理。营运系统主要是亿企联后台，主要是公司运营人员配置数据和处理商家请求，主要有13个大菜单，我主要负责：支付渠道理、商户管理、渠道管理、设备管理模块，除此之外，还有：权限管理、分润管理、供应商管理、财务管理等。信息发布系统是配置和发布信息给商家，我主要负责pc及移动端的页面展示。渠道管理系统开放给代理商使用，主要是查看推荐商户和分润，主要是渠道管理、渠道分润管理、商户管理、系统管理4个菜单。
-																职责描述:负责公司各产品网站页面前端开发制作,根据产品需求,分析并给出最优的页面前端结构解决方案,与UI合作完成网站页面前端的特效和最新的应用及与后台人员进行数据对接等。</p>
-																<p><em>项目网址：</em></p>
-																<p>PC端亿企联网址： http://www.yiql.net/（http://work.duchunyang.cn）</p>
-															</div>
-														</div>
-
-														<div class="table_project_item">
-															<div class="table_project_title">
-																亿企联项目手机端
-															</div>
-															<div class="table_project_con">
-																<p><em>项目简述：</em>为满足用户需求，开发手机亿企联项目，方便商家使用。手机亿企联就是把pc端的功能移植到手机端（基于微信公众号）。手机亿企联主要负责：我的卡、我的券、我的店铺、聚优惠、卡超市、手机红包、系统公告、二维码收款、支付渠道、财务对账、商城商品展示、订单、售后、优惠券等。</p>
-																<p><em>项目网址：</em></p>
-																<p>移动端亿企联网址： http://m.yiql.net/</p>
-																<p>移动端红包项目网址： http://work.duchunyang.cn/item/redpacket/index.html</p>
-															</div>
-														</div>
-													</div>
-													
-													
 												</div>
 											</div>
 										</div>
@@ -321,7 +176,7 @@
 								</tr>
 								<!-- 教育经历  end -->
 								<!-- 获得证书  start -->
-								<tr>
+								<!-- <tr>
 									<th>
 										<div class="table_title_th">获得证书</div>
 									</th>
@@ -334,7 +189,7 @@
 											</div>
 										</div>
 									</td>
-								</tr>
+								</tr> -->
 								<!-- 获得证书  end -->
 								<!-- 自我评价  start -->
 								<tr>
