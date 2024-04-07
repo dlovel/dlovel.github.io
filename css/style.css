@@ -41,6 +41,9 @@ div{outline:none;}
 .table_experience p{font-size:14px;line-height:30px;}
 
 .table_project{margin:0 auto;display: flex;align-items: center;border-bottom:1px solid #669999;}
+.table_project:last-child{
+	border-bottom: 0;
+}
 .table_project_left{width:55px;font-weight: bold;font-size:12px;text-align: left;flex:0 0 auto;padding:0 5px;}
 .table_project_right{width:calc(100% - 55px);border-left:1px solid #669999;}
 .table_project_item:after{content:"";display:block;clear:both;}
